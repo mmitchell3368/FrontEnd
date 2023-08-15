@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--
+	Name: Group 2 (Benjamin Ward, Michael Mitchell, Braden Smith)
+	File Name: contact.html
+	Date: 06/13/23
+-->
+<html lang="en">
+<head>
+	<title> Brew City: Contact</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<meta name="viewport" content="width=device-width, initialscale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Lora&family=Nunito:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<div class="tab-desk">
+				<h1>Brew City</h1>
+				<h3>Brew. Share. Drink Responsibly.</h3>
+			</div>
+			<div class="mobile">
+				<h1>Brew City</h1>
+				<h3>Brew. Share.
+				<br>
+				Drink Responsibly.</h3>
+			</div>
+		</header>
+		
+		<nav>
+		
+			<ul> 
+				<li><a href="index.html">Home</a></li>
+				<li><a href="process.html">How-to Brew</a></li>
+				<li><a href="calculator.html">Brew Calculator</a></li>
+				<li><a href="hops.html">Comparing Hops</a></li>
+				<li><a href="resources.html">Additional Resources</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="contact.html">Contact</a></li>
+
+			</ul>
+			
+		</nav>
+		
+		<!-- Use the main area to add the main content of the webpage -->
+		<main>
+			<div id="contact">
+				<h2>You can reach us at:</h2>
+				<p class="tel-link round mobile"><a href="tel:4145552739">(414) 555-BREW(2739)</a></p>
+				<p class="tab-desk">(814) 555-2739</p>
+				<p>Email: <a href="mailto:brewcity@brewcity.com" class="link">brewcity@brewcity.com</a></p>
+				<p>Address: <a href="https://goo.gl/maps/6pvsuQZPyKrM5enA9" target="_blank" class="link">910 N Doctor M.L.K. Jr Dr, Milwaukee, WI 53203</a></p>
+			</div>
+			
+			<div id="form">
+				
+				<h2>Complete the form below and we will contact you soon.</h2>
+				
+				<form class="form-grid">
+					<fieldset>
+						<legend>Contact Information</legend>
+						<label for="fName">First Name:</label>
+						<Input type="text" name="fName" id="fName">
+						<label for="lName">Last Name:</label>
+						<Input type="text" name="lName" id="lName">
+						<label for="bName">Name of Business:</label>
+						<Input type="text" name="bName" id="bName">
+						<label for="email">Email:</label>
+						<Input type="email" name="email" id="email">
+						<label for="phone">Phone:</label>
+						<Input type="tel" name="phone" id="phone">
+					</fieldset>
+					<fieldset>
+						<legend>Additional Information</legend>
+						<p>I would like more information about:</p>
+						<label for="howto">
+							<Input type="radio" name="info" id="howto" value="How-to">How-to
+						</label>
+						<label for="calculator">
+							<Input type="radio" name="info" id="calculator" value="Calculator">Calculator
+						</label>
+						<label for="hops">
+							<Input type="radio" name="info" id="hops" value="Hops">Hops
+						</label>
+						<label for="other">
+							<Input type="radio" name="info" id="other" value="Other">Other, please specify below.
+						</label>
+						
+						<label for="questions">What questions do you have for us?
+							<textarea name="questions" id="questions" rows="5" cols="35"></textarea>
+						</label>
+					</fieldset>
+					
+					<input type="submit" id="submit" value="Submit" class="btn">
+				</form>
+				
+			</div>
+		</main>
+		
+		
+			<footer>
+				<div>
+					<p>&copy; Copyright 2023. All Rights Reserved</p>
+					<p><a href="mailto:brewcity@brewcity.com">brewcity@brewcity.com</a></p>
+				</div>
+				<div class="foot">
+					<a href="https://www.facebook.com" target="_blank"><img src="images/facebook-logo.png" alt="blue Facebook logo"></a>
+					<a href="https://twitter.com" target="_blank"><img src="images/twitter-logo.png" alt="blue Twitter logo"></a>
+					<a href="https://instagram.com" target="_blank"><img src="images/instagram-logo.png" alt="blue Instagram logo"></a>
+				</div>
+			</footer>
+	</div>
+</body>
+</html>

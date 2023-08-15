@@ -1,0 +1,381 @@
+/*
+Authors: Michael Mitchell, Braden Smith
+Date: 06/13/2023
+File Name: styles.css
+*/
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, ul, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* Style rule for images */
+img{
+	max-width: 100%;
+	display: block;
+}
+
+.about-image {
+	float: left;
+	margin-right: 20px;
+	width: 100px;
+	height: 100px;
+}
+.resources-img {
+	width: 25%;
+	padding: 10px;
+}
+
+body {
+	background: linear-gradient(rgb(255, 255, 128), rgba(255, 255, 128, .5));
+}
+
+/*Style rules for video*/
+video {
+	max-width: 80%;
+	display: block;
+}
+
+/* Style rules for mobile viewport */
+
+.mobile h1, .mobile h3 {
+	padding: 1%;
+	text-align: center;
+}
+.mobile h1 {
+	font-family: 'Nunito';
+	font-size: 1.5em;
+}
+.mobile h3 {
+	font-family: 'Lora', serif;
+	font-size: .75em;
+}
+
+/* Style rules to show mobile class and hide tab-desk class */
+.mobile {
+	display: block;
+}
+
+.tab-desk {
+	display: none;
+}
+
+/* Style rules for header area */
+
+header {
+	text-align: center;
+	font-size: 3em;
+	color: #373684;
+}
+header h1 {
+	font-style: italic;
+}
+hr {
+	background-color: #373684;
+}
+.resource-h2 {
+	text-align: center;
+}
+.resource-p {
+	text-align: center;
+}
+
+/*Style rules for navigation area */
+nav {
+	background-color: #373684;
+}
+nav ul {
+	list-style-type: none;
+	text-align: center;
+}
+nav ol {
+	text-align: center;
+	padding: 10px;
+}
+nav li {
+	display: block;
+	font-size: 1.5em;
+	font-family: Geneva, Arial, sans-serif;
+	font-weight: bold;
+	border-top: 0.5px solid #f6eee4;
+}
+nav li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.5em 1em;
+	text-decoration: none;
+}
+
+
+/*Style rules for main content */
+
+main {
+	padding: 1%;
+	background-color: #e5e9fc;
+	font-family: 'Lora', serif;
+	overflow: auto;
+}
+main p {
+	font-size: 1.24em;
+}
+main h3 {
+	padding-top: 2%;
+}
+main h4 {
+	font-family: 'Emblema One', serif;
+	font-size: 1.5em;
+}
+.about-h4 {
+	float: left;
+}
+main ul {
+	list-style-type: square;
+	padding-left: 1%;
+}
+main li {
+	font-family: 'Nunito', serif;
+	font-size: 1.25em;
+	padding: 10px;
+}
+
+main li ul {
+	font-size: 1.0em;
+}
+
+main ol li {
+	font-size: 1.0em;
+}
+.link {
+	color: #4d3319;
+	text-decoration: none;
+	font-weight: bold;
+	font-style: italic;
+}
+.action {
+	font-size: 1.75em;
+	color: #373684;
+	text-align: center;
+}
+
+.round {
+	border-radius: 6px;
+}
+.fig-img {
+	height: 300px;
+	width: 300px;
+}
+
+#invis {
+	list-style: none;
+}
+
+#info {
+	margin-left: 10%;
+}
+#contact {
+	text-align: center;
+}
+
+.map {
+	border: 5px solid #373684
+}
+.tel-link {
+	background-color: #2a1f14;
+	padding: 2%;
+	width: 80%;
+	margin: 0 auto;
+}
+.tel-link a {
+	color: #f6eee4;
+	text-decoration: none;
+	font-weight: bold;
+}
+/* Style rules for footer content */
+footer {
+	text-align: center;
+	font-size: 1em;
+	clear: left;
+}
+footer a {
+	color: #4645a8;
+	text-decoration: none;
+}
+
+.foot img{
+	width: 20px;
+	padding:  5px;
+}
+
+.foot {
+	display: flex;
+	justify-content: center;
+}
+
+/*Style rules for form elements*/
+fieldset, input, textarea {
+		margin-bottom: 1px;
+}
+
+fieldset legend {
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
+fieldset {
+	border: none;
+	width: 200px;
+}
+
+label {
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+form {
+	padding-right: 100px;
+}
+
+.button {
+	padding-left: 14px;
+}
+
+.formContainer { /*add */
+	display: flex;
+	align-items: right;
+}
+
+.formContainer img{ /*add */
+	display: none;
+}
+
+/* Media Query for mobile Viewport */
+@media screen and (min-width: 400px), print {
+	.tab-desk {
+		display: none;
+	}
+	
+	.mobile {
+		display: block;
+	}
+	nav {
+		margin-right: 35px;
+		margin-left: 35px;
+	}
+	main {
+		margin-right: 35px;
+		margin-left: 35px;
+	}
+	.grid {
+		display: inline-block;
+		grid-template-columns: auto auto;
+		grid-gap: 10px;
+	}
+
+	/* Table Viewport: increase icon size for footer */
+	
+	.foot img{
+	width: 35px;
+	padding:  10px;
+	}
+
+	.foot {
+	display: flex;
+	justify-content: center;
+	}
+}
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 620px), print {
+	
+	/* Tablet Viewport: show tab-desk class, hide mobile class */
+	.tab-desk {
+		display: block;
+	}
+	
+	.mobile {
+		display: none;
+	}
+	/* Tablet Viewport: Style rules for nav area */ 
+	nav li {
+		border-top: none;
+		display: inline-block;
+		font-size:1.25em;
+	}
+	
+	nav li a {
+		padding: 0.5em;
+	}
+
+	.formContainer img{
+	display: block;
+	max-width: 95%;
+	height: auto;
+	padding-top: 20px;
+	}
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1000px), print {
+	/* Desktop Viewport: Style rules for nav area */
+	nav li {
+		font-size: 1.5em;
+	}
+	nav li a {
+		padding: 0.5em 1.5em;
+	}
+	nav li a:hover {
+		color: #2a1f14;
+		background-color: #f6eee4;
+	}
+	
+	/* Desktop Viewport: Style rules for main content */
+	#info ul {
+		margin-left: 5%;
+	}
+	nav li a:hover {
+		color: #2a1f14;
+		background-color: #f6eee4;
+	}
+	/* Desktop Viewport: Style rules for main content */
+	#info ul {
+		margin-left: 5%;
+	}
+	.formContainer img{
+		max-width: 95%;
+		height: auto;
+	}
+	.grid {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 10px;
+	}
+
+}
+
+/* Media Query for Large-ish Desktop Viewport */
+@media screen and (min-width: 1291px), print {
+	.formContainer img{ /*add */
+	max-width: 818px;
+	height: auto;
+	}
+
+}
+
+/* Media Query for Large Desktop Viewport */
+@media screen and (min-width: 1921px), print {
+		
+	#wrapper {
+		width: 1920px;
+		margin: 0 auto;
+	}
+}
+
+/* Media Query for Print */
+@media print {
+	body {
+		background-color: #fff;
+		color: #000;
+	}
+}

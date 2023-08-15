@@ -1,0 +1,7 @@
+http://www.exampledomain.com/index.html
+http://www.exampledomain.com/about.html
+http://www.exampledomain.com/contact.html
+http://www.exampledomain.com/hops.html
+http://www.exampledomain.com/resources.html
+http://www.exampledomain.com/process.html
+http://www.exampledomain.com/calculator.html

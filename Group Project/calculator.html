@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+	Name: Group 2 (Benjamin Ward, Michael Mitchell, Braden Smith)
+	File Name: template.html
+	Date: 06/19/23
+-->
+<html lang="en">
+	<head>
+		<title> Brew City: Calculator</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/styles.css">
+		<meta name="viewport" content="width=device-width, initialscale=1.0">
+		<link href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Lora&family=Nunito:wght@500&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<div class="tab-desk">
+					<h1>Brew City</h1>
+					<h3>Brew. Share. Drink Responsibly.</h3>
+				</div>
+				<div class="mobile">
+					<h1>Brew City</h1>
+					<h3>Brew. Share.
+					<br>
+					Drink Responsibly.</h3>
+				</div>
+			</header>
+			
+			<nav>
+				<ul> 
+					<li><a href="index.html">Home</a></li>
+					<li><a href="process.html">How-to Brew</a></li>
+					<li><a href="calculator.html">Brew Calculator</a></li>
+					<li><a href="hops.html">Comparing Hops</a></li>
+					<li><a href="resources.html">Additional Resources</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			
+			<!-- Use the main area to add the main content of the webpage -->
+			<main>
+				<h1> Calculate your water volume and Strike temperatrue</h1>
+				<div class="formContainer">	
+					<div>
+						<form id="form">
+							<fieldset>
+								<label for="gallonsEnd">Batch size in gallons:</label>
+								<input type="text" name="gallonsEnd" id="gallonsEnd" size="5" required>
+								<label for="grainWeight">Weight of grains (lbs):</label>
+								<input type="text" name="grainWeight" id="grainWeight" size="5" required>
+								<label for="hopsWeight">Weight of hops (oz):</label>
+								<input type="text" name="hopsWeight" id="hopsWeight"  size="5" required>
+								<label for="boilTime">Boil time in minutes:</label>
+								<input type="text" name="boilTime" id="boilTime"  size="5" required>
+								<label for="grainTemp">Grain temperature &#8457;:</label>
+								<input type="text" name="grainTemp" id="grainTemp"  size="5" required>
+								<label for="mashTemp">Mash temperature &#8457;:</label>
+								<input type="text" name="mashTemp" id="mashTemp"  size="5" required>		
+								<label for="kettleSize">Kettle diameter in inches:</label>
+								<input type="text" name="kettleSize" id="kettleSize"  size="5" required>					
+							</fieldset>
+							<div class="button">
+								<button onclick="calculate()">Calculate</button>
+							</div>
+							<p id="result"></p>
+						</form>
+					</div>
+					<div>
+						<img src="Images\beertypes.png" alt="beer types">
+					</div>
+				</div>
+			</main>
+			
+			<footer>
+				<div>
+					<p>&copy; Copyright 2023. All Rights Reserved</p>
+					<p><a href="mailto:brewcity@brewcity.com">brewcity@brewcity.com</a></p>
+				</div>
+				<div class="foot">
+					<a href="https://www.facebook.com" target="_blank"><img src="images/facebook-logo.png" alt="blue Facebook logo"></a>
+					<a href="https://twitter.com" target="_blank"><img src="images/twitter-logo.png" alt="blue Twitter logo"></a>
+					<a href="https://instagram.com" target="_blank"><img src="images/instagram-logo.png" alt="blue Instagram logo"></a>
+				</div>
+			</footer>
+		</div>
+		<script src="scripts/script.js"></script>
+	</body>
+</html>
