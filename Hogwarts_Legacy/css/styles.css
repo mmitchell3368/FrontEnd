@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&family=Mate+SC&family=Poltawski+Nowy:ital,wght@1,500&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.9);
+    background: url(C:\Users\Owner\Desktop\HTML_CSS\Projects\Project_2\media\mylivewallpapers.com-Hogwarts-Legacy-4K.mp4);
+    background-size: cover;
+    z-index: -100;
+}
+@font-face {
+    font-family: Hogwarts;
+    src: url('../Hogwarts.ttf') format('truetype');
+}
+.navbar {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    width: 250px;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+nav ul li a {
+    color: #fff;
+    font-family: Hogwarts;
+    font-size: 20px;
+    text-shadow: 0 0 10px rgb(2, 169, 252);
+}
+nav ul li a:hover {
+    transition-delay: 0.15s;
+    transform: translateY(-10px);
+}
+.main {
+    font-family: Hogwarts;
+    color:#fff;
+    border: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(0, -350%);
+    text-align: center;
+    margin-top: 20px;
+}
+.main h2 {
+    font-weight: 400;
+    font-size: 40px;
+    border: none;
+}
+.main h2 {
+    text-shadow: 0 0 10px rgb(2, 169, 252);
+}
+.button {
+    border-radius: 20px;
+    border: 2px solid white;
+    font-family: Hogwarts;
+    background-color: transparent;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    text-shadow: 0 0 10px rgb(2, 169, 252);
+    box-shadow: 0 0 10px rgb(2, 169, 252);
+}
+.button:hover {
+    transform: translateY(-5px);
+    transition-delay: 0.15s;
+}
+.explore {
+    color: #fff;
+    text-decoration: none;
+}
+.about {
+    background: rgba(0, 0, 0, 0.9);
+    margin-top: -200px;
+    text-align: center;
+}
+.about p {
+    font-family: Hogwarts;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 100px;
+    color: #fff;
+}
+.about-header-img {
+    margin-top: 70px;
+    
+}
+.about-footer-img {
+    margin-top: -50px;
+    margin-bottom: 20px;
+}
+.links {
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    color: #fff;
+}
+
+.links ul li {
+    display: inline-block;
+    list-style: none;
+    width: 50px;
+    padding: 50px;
+}
+.links ul li a {
+    color: #fff;
+    align-items:center ;
+    justify-content: space-between;
+    font-size: 50px;
+}
+.links ul li a i:hover {
+    transform: translateY(-10px);
+    transition-delay: 0.15s;
+}
+.links h3 {
+    font-family: Hogwarts;
+    padding: 20px;
+    font-size: 30px;
+    word-spacing: 5px;
+}
+.links p a {
+    font-size: 15px;
+    color: #b69451;
+}
+.links p a:visited {
+    text-decoration: none;
+    color: #b69451;
+}
+.links p:hover {
+    transform: translateX(10px);
+    transition-delay: 0.15s;
+    cursor: pointer;
+}
+.button2 {
+    align-items: center;
+    justify-content: center;
+    border: 1px solid hsla(0, 0%, 100%, 0.2);
+    background: transparent;
+    border-radius: 34px;
+    color: hsla(0, 0%, 100%, 0.9);
+    margin: 70px;
+    height: 100%;
+    padding: 20px;
+}
+.button2:hover {
+    color:#b69451;
+    transform: translateY(-5px);
+    transition-delay: 0.15s;
+    cursor: pointer;
+}
+.an {
+    text-align: center;
+}
+.an img {
+    border: 2px solid #b69451;
+    border-radius: 10px;
+}
+.an img:hover {
+    transform: translateY(-5px);
+    transition-delay: 0.15s;
+}
+footer {
+    appearance: button;
+    background: rgba(0, 0, 0, 0.9);
+    height: 75px;
+    color: #fff;
+    font-family: 'Mate SC', serif;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+footer p {
+    padding-top: 20px;
+}
+footer p:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+.fa {
+    color: #fff;
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+.fa:hover {
+    transform: translateY(-2px);
+    transition-delay: 0.15s;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 400px) {
+    
+}
