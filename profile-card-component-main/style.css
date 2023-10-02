@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+
+    --ff: 'Kumbh Sans', sans-serif;
+
+    --fs-name-and-stats: 18px;
+    --fs-rest: 14px;
+   
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark-cyan);
+    font-family: var(--ff);
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.card img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.victor img {
+    border: 5px solid #fff;
+    border-radius: 50%;
+    margin-top: -60px;
+}
+.context {
+    margin-top: 15px;
+}
+
+.title {
+    margin-bottom: 10px;
+}
+
+.title h1 {
+    color: var(--very-dark-desaturated-blue);
+    font-size: var(--fs-name-and-stats);
+    font-weight: var(--fw-bold);
+}
+
+.title span {
+    color: var(--dark-grayish-blue);
+    font-weight: var(--fw-regular);
+    margin-left: 5px;
+}
+
+.context p {
+    color: var(--dark-grayish-blue);
+    font-weight: var(--fw-regular);
+}
+
+hr {
+    margin-top: 25px;
+    border: 0.5px solid var(--dark-gray);
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 35px;
+}
+
+.followers h2 {
+    color: var(--very-dark-desaturated-blue);
+    font-size: var(--fs-name-and-stats);
+    font-weight: var(--fw-bold);
+}
+
+.followers p {
+    color: var(--dark-gray);
+    font-size: var(--fs-rest);
+    font-weight: var(--fw-regular);
+}
+
+.likes h2 {
+    color: var(--very-dark-desaturated-blue);
+    font-size: var(--fs-name-and-stats);
+    font-weight: var(--fw-bold);
+}
+
+.likes p {
+    color: var(--dark-gray);
+    font-size: var(--fs-rest);
+    font-weight: var(--fw-regular);
+}
+
+.photos h2 {
+    color: var(--very-dark-desaturated-blue);
+    font-size: var(--fs-name-and-stats);
+    font-weight: var(--fw-bold);
+}
+
+.photos p {
+    color: var(--dark-gray);
+    font-size: var(--fs-rest);
+    font-weight: var(--fw-regular);
+}
+
+/* Responsive */
+@media (max-width: 375px) {
+    .container {
+        max-width: 375px;
+    }
+}
+
