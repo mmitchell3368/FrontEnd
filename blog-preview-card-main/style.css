@@ -67,6 +67,9 @@ body {
     font-weight: 800;
     word-spacing: large;
 }
+.bold p:hover {
+    color: hsl(47, 88%, 63%);
+}
 .grey {
     line-height: 25px;
 } 
