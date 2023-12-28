@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Figtree', sans-serif;
+    font-size: 16px;
+}
+body {
+    background-color: hsl(47, 88%, 63%);
+}
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    text-align: center;
+    background-color: #fff;
+    height: 560px;
+    width: 395px;
+    border: 1px solid black;
+}
+.container-2 {
+    position: absolute;
+    left: 51%;
+    top: 51%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    text-align: center;
+    background-color: black;
+    height: 560px;
+    width: 395px;
+    border: 1px solid black;
+}
+
+.image img {
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.learn-box {
+    background-color: hsl(47, 88%, 63%);
+    width: 90px;
+    margin-top: 20px;
+    margin-left: 7%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.learn-box p {
+    padding: 5px;
+    color: black;
+    font-weight: bold;
+}
+
+.text {
+    justify-content: space-evenly;
+}
+.text p {
+    text-align: left;
+    margin-left: 7%;
+    margin-top: 20px;
+}
+.bold p {
+    font-size: 25px;
+    font-weight: 800;
+    word-spacing: large;
+}
+.grey {
+    line-height: 25px;
+} 
+.grey p {
+    font-weight: 600;
+    color: hsl(0, 0%, 50%);
+}
+
+.name {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 30px;
+}
+.name img {
+    width: 10%;
+}
+.name p {
+    margin-left: 15px;
+}
+
+@media only screen and (max-width: 375px) {
+    .container {
+        max-width: 325px; 
+        max-height: 500px;
+    }
+    .container-2 {
+        max-width: 325px;
+        max-height: 500px;
+    }
+    .image img {
+        max-width: 275px;
+    }
+    .bold p {
+        font-size: 20px;
+    }
+    .grey p {
+        font-size: 13px;
+        font-weight: 600;
+    }
+}
