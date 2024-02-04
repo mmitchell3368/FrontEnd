@@ -1,0 +1,303 @@
+:root {
+    /* Primary */
+    --Nutmeg: hsl(14, 45%, 36%);
+    --DarkRaspberry: hsl(332, 51%, 32%);
+
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --RoseWhite: hsl(330, 100%, 98%);
+    --EggShell: hsl(30, 54%, 90%);
+    --LightGrey: hsl(30, 18%, 87%);
+    --WengeBrown: hsl(30, 10%, 34%);
+    --DarkCharcoal: hsl(24, 5%, 18%);
+
+    /* Font Families */
+    --font-familyOutfit: 'Outfit', sans-serif;
+    --font-familyYoungSerif: 'Young Serif', serif;
+
+    /* Font Size and Weights */
+    --fontSize: 16px;
+    --fontWeight400: 400;
+    --fontWeight600: 600;
+    --fontWeight700: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--EggShell);
+}
+.mobile-img {
+    display: none;
+}
+.container {
+    background-color: var(--White);
+    max-width: 45rem;
+    max-height: 100rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    margin: 5rem auto;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.omelette img {
+    max-width: 41rem;
+    border-radius: 10px;
+}
+
+.omelette h2 {
+    font-family: var(--font-familyYoungSerif);
+    font-size: 41px;
+    font-weight: var(--fontWeight600);
+    margin-top: 1rem;
+    color: var(--DarkCharcoal);
+}
+
+.omelette p {
+    font-family: var(--font-familyOutfit);
+    margin-top: 1rem;
+    font-size: var(--fontSize);
+    font-weight: var(--fontWeight400);
+    color: var(--WengeBrown);
+}
+
+.prep {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: var(--RoseWhite);
+    width: 100%;
+}
+
+.prep h2 {
+    font-family: var(--font-familyOutfit);
+    font-size: 18px;
+    font-weight: var(--fontWeight600);
+    color: var(--DarkRaspberry);
+}
+
+.prep ul {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    padding-top: 0.5rem;
+    padding-left: 1.5rem;
+    width: 100%;
+}
+.prep ul li {
+    padding-top: 0.7rem;
+    padding-left: 1rem;
+    font-family: var(--font-familyOutfit);
+    font-size: var(--fontSize);
+    color: var(--WengeBrown);
+}
+
+.prep ul li span {
+    color: var(--DarkCharcoal);
+    font-weight: var(--fontWeight700);
+}
+
+.ingredients {
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--LightGrey);
+}
+
+.ingredients h2 {
+    font-family: var(--font-familyYoungSerif);
+    font-size: 25px;
+    color: var(--Nutmeg);
+}
+
+.ingredients ul {
+    margin-top: 0.7rem;
+    padding-left: 2rem;
+}
+
+.ingredients ul li {
+    font-family: var(--font-familyOutfit);
+    font-size: var(--fontSize);
+    color: var(--WengeBrown);
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.instructions {
+    margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--LightGrey);
+}
+
+.instructions h2 {
+    font-family: var(--font-familyYoungSerif);
+    font-size: 25px;
+    color: var(--Nutmeg);
+}
+
+.instructions ol {
+    margin-top: 0.7rem;
+    padding-left: 2rem;
+    font-size: var(--fontSize);
+}
+
+.instructions ol li::marker {
+    color: var(--Nutmeg);
+    font-weight: var(--fontWeight700);
+}
+
+.instructions ol li {
+    font-family: var(--font-familyOutfit);
+    color: var(--WengeBrown);
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    list-style: decimal;
+}
+
+.instructions ol li span {
+    color: var(--DarkCharcoal);
+    font-weight: var(--fontWeight700);
+}
+
+.nutrition {
+    margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.nutrition h2 {
+    font-family: var(--font-familyYoungSerif);
+    font-size: 25px;
+    color: var(--Nutmeg);
+}
+
+.nutrition p {
+    margin-top: 1rem;
+    font-family: var(--font-familyOutfit);
+    font-size: var(--fontSize);
+    font-weight: var(--fontWeight400);
+    color: var(--WengeBrown);
+}
+
+.nutrition table {
+    margin-top: 1rem;
+}
+
+.nutrition table tbody {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-evenly;
+    
+}
+.nutrition table tbody tr {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    border-bottom: 2px solid var(--LightGrey);
+    text-align: left;
+}
+
+.nutrition table tbody tr th {
+    font-family: var(--font-familyOutfit);
+    font-size: var(--fontSize);
+    font-weight: var(--fontWeight400);
+    color: var(--WengeBrown);
+    padding-left: 2rem;
+}
+.nutrition table tbody tr td {
+    font-family: var(--font-familyOutfit);
+    font-size: var(--fontSize);
+    font-weight: var(--fontWeight700);
+    color: var(--Nutmeg);
+}
+
+.one {
+    padding-right: 15rem;
+}
+
+.two {
+    padding-right: 16rem;
+}
+
+.three {
+    padding-right: 15.5rem;
+}
+
+.four {
+    padding-right: 17.2rem;
+}
+
+.one-one {
+    padding-right: 15rem;
+}
+
+.nutrition .last-border {
+    border-bottom: none;
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        background-color: var(--White);
+    }
+    
+    .mobile-img {
+        display: block;
+    }
+    
+    .mobile-img img {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 2rem;
+        border-radius: 0;
+    }
+    
+    .omelette img {
+        display: none;
+    }
+    
+    .omelette h2 {
+        margin: 0;
+        padding: 0;
+        font-size: xx-large;
+    }
+
+    .prep {
+        border-radius: 10px;
+    }
+
+    .one {
+        padding-right: 4.5rem;
+    }
+    
+    .two {
+        padding-right: 5.5rem;
+    }
+
+    .three {
+        padding-right: 5rem;
+    }
+
+    .four {
+        padding-right: 6.8rem;
+    }
+
+    .one-one {
+        padding-right: 5rem;
+    }
+}
