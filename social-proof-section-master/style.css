@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root {
+    --fontFamily: 'League Spartan', sans-serif;
+
+    --fontSize: 15px;
+
+    --fontWeight400: 400;
+    --fontWeight500: 500;
+    --fontWeight700: 700;
+
+    --VeryDarkMagenta: hsl(300, 43%, 22%);
+    --SoftPink: hsl(333, 80%, 67%);
+    --DarkGrayishMagenta: hsl(303, 10%, 53%);
+    --LightGrayishMagenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fontFamily);
+    background: url("/images/bg-pattern-top-desktop.svg") no-repeat fixed,
+    url("/images/bg-pattern-bottom-desktop.svg") no-repeat bottom right fixed;
+}
+
+.container {
+    margin-top: 6rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.top-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25vw;
+    align-items: left;
+    justify-content: left;
+    margin-bottom: 3.5rem;
+}
+
+.text {
+    width: 30rem;
+}
+
+.text h1 {
+    font-size: 60px;
+    font-weight: var(--fontWeight700);
+    color: var(--VeryDarkMagenta);
+    margin-bottom: 2rem;
+}
+
+.text p {
+    font-size: 20px;
+    font-weight: var(--fontWeight400);
+    color: var(--DarkGrayishMagenta);
+    line-height: 1.2;
+}
+
+.star-rated {
+    padding: 1rem;
+    margin-top: 2.7rem;
+}
+
+.stars {
+    padding: 0.7rem;
+}
+
+.stars img {
+    padding: 0.2rem;
+}
+
+.reviews {
+    padding: 0.2rem 1.3rem;
+    display: flex;
+    width: 83%;
+    border-radius: 5px;
+    background-color: var(--LightGrayishMagenta);
+    margin-bottom: 1rem;
+}
+
+.reviews p {
+    padding: 0.9rem 1rem;
+    font-size: 16px;
+    font-weight: var(--fontWeight700);
+    color: var(--VeryDarkMagenta);
+}
+
+.guru {
+    padding: 0.2rem 1.3rem;
+    display: flex;
+    width: 83%;
+    border-radius: 5px;
+    background-color: var(--LightGrayishMagenta);
+    margin-bottom: 1rem;
+    margin-left: 2.5rem;
+}
+
+.guru p {
+    padding: 0.9rem 0.9rem;
+    font-size: 16px;
+    font-weight: var(--fontWeight700);
+    color: var(--VeryDarkMagenta);
+}
+
+.best-tech {
+    padding: 0.2rem 1.3rem;
+    display: flex;
+    width: 83%;
+    border-radius: 5px;
+    background-color: var(--LightGrayishMagenta);
+    margin-bottom: 1rem;
+    margin-left: 5rem;
+}
+
+.best-tech p {
+    padding: 0.9rem 1rem;
+    font-size: 16px;
+    font-weight: var(--fontWeight700);
+    color: var(--VeryDarkMagenta);
+}
+
+.verified-buyers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: left;
+    padding: 3rem;
+}
+
+.colton {
+    border-radius: 5px;
+    width: 25rem;
+    padding: 2rem 1.7rem;
+    background-color: var(--VeryDarkMagenta);
+    margin-bottom: 2rem;
+}
+
+.irene {
+    margin-top: 1rem;
+    border-radius: 5px;
+    width: 25rem;
+    padding: 2rem 1.7rem;
+    background-color: var(--VeryDarkMagenta);
+    margin-bottom: 1rem;
+}
+
+.anne {
+    margin-top: 2rem;
+    border-radius: 5px;
+    width: 25rem;
+    padding: 2rem 1.7rem;
+    background-color: var(--VeryDarkMagenta);
+}
+
+.statement1 {
+    font-size: 19.5px;
+    font-weight: var(--fontWeight500);
+    color: var(--White);
+    line-height: 1.5;
+}
+
+.statement2 {
+    font-size: 20px;
+    font-weight: var(--fontWeight500);
+    color: var(--White);
+    line-height: 1.5;
+}
+
+.statement3 {
+    font-size: 19.5px;
+    font-weight: var(--fontWeight500);
+    color: var(--White);
+    line-height: 1.5;
+}
+
+.user {
+    display: flex;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.user img {
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+    margin-right: 1rem;
+}
+
+.user-name {
+    font-size: 18px;
+    color: var(--White);
+    font-weight: var(--fontWeight500);
+    margin-bottom: 0.4rem;
+}
+
+.vb {
+    font-size: 18px;
+    color: var(--SoftPink);
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        background: url("/images/bg-pattern-top-mobile.svg") no-repeat fixed,
+        url("/images/bg-pattern-bottom-mobile.svg") no-repeat bottom right fixed;
+    }
+
+    .container {
+        margin: 5rem 0;
+    }
+
+    .top-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        grid-gap: 2rem;
+        margin-bottom: 0;
+    }
+
+    .text h1 {
+        font-size: 40px;
+        padding: 0 5rem;
+    }
+
+    .text p {
+        font-size: 19px;
+        padding: 0 4rem;
+    }
+
+    .star-rated {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0 1.5rem;
+        padding: 0;
+    }
+    
+    .stars {
+        padding-top: 1rem;
+    }
+
+    .stars img {
+        padding: 0 0.2rem;
+    }
+
+    .reviews {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 21rem;
+        padding: 0;
+    }
+    
+    .reviews p {
+        margin-top: -1rem;
+        font-size: 18.5px;
+    }
+
+    .guru {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 21rem;
+        padding: 0;
+        margin-left: 0;
+    }
+
+    .guru p {
+        margin-top: -1rem;
+        font-size: 18.5px;
+    }
+
+    .best-tech {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 21rem;
+        padding: 0;
+        margin-left: 0;
+    }
+
+    .best-tech p {
+        margin-top: -1rem;
+        font-size: 18.5px;
+    }
+
+    .verified-buyers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .colton {
+        width: 21rem;
+        flex: 1 1 calc(33.333% - 20px); 
+        margin: 10px;
+    }
+
+    .irene {
+        width: 21rem;
+        flex: 1 1 calc(33.333% - 20px); 
+        margin: 10px;
+    }
+
+    .anne {
+        width: 21rem;
+        flex: 1 1 calc(33.333% - 20px); 
+        margin: 10px;
+    }
+
+    .statement1 {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .statement2 {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .statement3 {
+        font-size: 17px;
+        text-align: left;
+    }
+}
