@@ -1,0 +1,132 @@
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --darkGrey: hsl(0, 0%, 12%);
+    --offBlack: hsl(0, 0%, 8%);
+
+    --fontSize: 14px;
+
+    --fontWeight400: 400;
+    --fontWeight600: 600;
+    --fontWeight700: 700;
+
+    --fontFamily: 'Inter', sans-serif;
+}   
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fontFamily);
+    background-color: var(--offBlack);
+    color: var(--white);
+}
+
+.container {
+    margin: 8rem 38%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 27rem;
+    border-radius: 10px;
+    padding-bottom: 1.5rem;
+    background-color: var(--darkGrey);
+}
+
+.hero-img {
+    margin-top: 2.5rem;
+}
+
+.hero-img img {
+    width: 60%;
+    border-radius: 100px;
+}
+
+.text {
+    margin-top: 1.5rem;
+}
+
+.text h1 {
+    font-size: 25px;
+    font-weight: var(--fontWeight700);
+    margin-bottom: 1rem;
+}
+
+.text h2 {
+    font-size: 15px;
+    font-weight: var(--fontWeight600);
+    margin-bottom: 1.5rem;
+    color: var(--green);
+}
+
+.text p {
+    font-size: var(--fontSize);
+    font-weight: var(--fontWeight400);
+    margin-bottom: 1.5rem;
+    color: var(--white);
+    opacity: 0.6;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.links ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+.links ul li {
+    width: 22rem;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    font-weight: var(--fontWeight700);
+    background-color: var(--grey);
+}
+
+.links ul li:hover {
+    background-color: var(--green);
+    color: var(--darkGrey);
+    font-weight: var(--fontWeight700);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 375px) {
+    .body {
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 6.5rem 1.3rem;
+        width: 335px;
+        padding-bottom: 0.5rem;
+    }
+    .hero-img {
+        margin-top: 1.5rem;
+    }
+    .text h1 {
+        margin-bottom: 0.5rem;
+    }
+    .links ul li {
+        font-size: var(--fontSize);
+        width: 18rem;
+    }
+} 
+
+
