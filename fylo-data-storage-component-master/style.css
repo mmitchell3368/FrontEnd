@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+:root {
+    --fontFamily: 'Raleway', sans-serif;;
+
+    --fontSize: 14px;
+
+    --fontWeight400: 400;
+    --fontWeight700: 700;
+
+    /* Use background, not background-color */
+    --Gradient: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+
+    --PaleBlue: hsl(243, 100%, 93%);
+    --GrayishBlue: hsl(229, 7%, 55%);
+    --DarkBlue: hsl(228, 56%, 26%);
+    --VeryDarkBlue: hsl(229, 57%, 11%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    background-color: var(--VeryDarkBlue);
+    background-image: url("/images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 100% auto;
+}
+
+body {
+    font-family: var(--fontFamily);
+    font-size: var(--fontSize);
+    color: white;
+}
+
+.container {
+    width: 63rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 17rem;
+    padding: 0 3rem;
+}
+
+.fylo {
+    background-color: var(--DarkBlue);
+    width: 17rem;
+    height: 10rem;
+    padding: 2rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-right: 2rem;
+}
+
+.logo {
+    width: 6.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.svg1 {
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: var(--VeryDarkBlue);
+    margin-right: 0.7rem;
+}
+
+.svg2 {
+    padding: 0.62rem 0.5rem;
+    border-radius: 5px;
+    background-color: var(--VeryDarkBlue);
+    margin-right: 0.7rem;
+}
+
+.svg3 {
+    padding: 0.75rem 0.5rem;
+    border-radius: 5px;
+    background-color: var(--VeryDarkBlue);
+    margin-right: 0.7rem;
+}
+
+.data-usage {
+    border-radius: 10px;
+    padding: 1.7rem 2rem;
+    width: 32rem;
+    margin-top: 1.6rem;
+    background-color: var(--DarkBlue);
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.storage {
+    color: var(--GrayishBlue);
+    font-weight: var(--fontWeight400);
+}
+
+.GB {
+    color: var(--PaleBlue);
+    font-weight: var(--fontWeight700);
+}
+
+.bar-bottom {
+    margin-top: 1rem;
+    width: 28rem;
+    height: 1.2rem;
+    border-radius: 50px;
+    background-color: var(--VeryDarkBlue);
+}
+
+.bar-top {
+    margin-top: 1rem;
+    width: 75%;
+    height: 1.2rem;
+    border-radius: 50px;
+    background: var(--Gradient);
+}
+
+.circle {
+    border-radius: 50%;
+    background-color: white;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-left: 94.5%;
+}
+
+.left {
+    display: flex;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 0;
+    background-color: var(--PaleBlue);
+    padding: 0.8rem 1rem;
+    width: fit-content;
+    margin-left: -11.5rem;
+    margin-top: -8rem;
+}
+
+.left span {
+    font-size: 35px;
+    color: var(--VeryDarkBlue);
+    font-weight: var(--fontWeight700);
+    margin-right: 0.3rem;
+}
+.left p {
+    margin-top: 1.1rem;
+    color: var(--GrayishBlue);
+    font-weight: var(--fontWeight700);
+}
+
+.triangle {
+    width: 0; 
+    height: 0; 
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid var(--PaleBlue);
+    transform: rotate(-135deg);
+    margin-top: -4rem;
+    margin-left: -1.2900000001rem;
+}
+
+.p1 {
+    margin-right: 0.3rem;
+}
+
+.p2 {
+    padding-right: 0.5rem;
+}
+
+.spans {
+    margin-top: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.span1 {
+    color: var(--PaleBlue);
+    font-weight: var(--fontWeight700);
+}
+
+.span2 {
+    color: var(--PaleBlue);
+    font-weight: var(--fontWeight700);
+}
+
+@media only screen and (max-width: 375px) {
+    html {
+        background-color: var(--VeryDarkBlue);
+        background-image: url("/images/bg-mobile.png");
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: 100% auto;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 8rem 1.5rem;
+    }
+
+    .fylo {
+        width: fit-content;
+        height: fit-content;
+        padding-right: 6.5rem;
+        margin: 0;
+    }
+
+    .logo {
+        width: 8rem;
+    }
+
+    .svg1 {
+        padding: 0.7rem;
+        margin-right: 1rem;
+    }
+
+    .svg2 {
+        padding: 0.79rem 0.7rem;
+        margin-right: 1rem;
+    }
+
+    .svg3 {
+        padding: 0.88rem 0.7rem;
+        margin-right: 1rem;
+    }
+
+    .data-usage {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bar-bottom {
+        width: 100%;
+    }
+
+    .bar-top {
+        width: 75%;
+    }
+
+    .circle {
+        margin-left: 90%;
+    }
+
+    .spans {
+        margin-bottom: 1rem;
+    }
+
+    .left {
+        margin: 0;
+        border-radius: 10px;
+        margin-top: -2rem;
+        width: 11rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .left span {
+        margin-right: 0.5rem;
+    }
+
+    .left p {
+        margin-top: 0.9rem;
+    }
+
+    .triangle {
+        display: none;
+    }
+}
