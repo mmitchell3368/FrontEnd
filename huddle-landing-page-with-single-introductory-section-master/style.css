@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    /* For Headings */
+    --fontFamilyPoppins: 'Poppins', sans-serif;
+    --fontFamilyOpenSans: 'Open Sans', sans-serif;
+
+    /* For Body */
+    --fontWeight400: 400;
+    --fontWeight600: 600;
+
+    --Violet: hsl(257, 40%, 49%);
+    --SoftMagenta: hsl(300, 69%, 71%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+html {
+    background-color: var(--Violet);
+}
+
+body {
+    background: url('/images/bg-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: top 41px;
+    background-size: 1365px;
+    z-index: 1;
+}
+
+.container {
+    display: flex;
+}
+
+.logo {
+    align-items: left;
+    justify-content: left;
+    padding: 2.5rem 3rem;
+}
+
+.logo .img1 {
+    width: 200px;
+    margin-bottom: 6.5rem;
+}
+
+.logo .img2 {
+    width: 750px;
+}
+
+.text {
+    margin-top: 16rem;
+    line-height: 1.6;
+}
+
+.text h2 {
+    font-family: var(--fontFamilyPoppins);
+    font-size: 40px;
+    color: white;
+    font-weight: var(--fontWeight600);
+    margin-bottom: 1.5rem;
+    padding-right: 7rem;
+}
+
+.text p {
+    font-family: var(--fontFamilyOpenSans);
+    font-size: 17.8px;
+    color: white;
+    font-weight: var(--fontWeight400);
+    margin-bottom: 1.3rem;
+    padding-right: 5rem;
+}
+
+.text button {
+    font-family: var(--fontFamilyOpenSans);
+    font-size: 16.5px;
+    color: var(--Violet);
+    font-weight: var(--fontWeight400);
+    margin-bottom: 10.5rem;
+    padding-right: 5rem;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 1rem 4.3rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.text button:hover {
+    background-color: var(--SoftMagenta);
+    color: white;
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    padding-right: 3rem;
+    margin-top: 0.3rem;
+}
+
+.icons i {
+    color: white;
+    font-size: 18px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+.tw {
+    padding: 0.5rem;
+}
+
+.in {
+    padding: 0.5rem;
+}
+
+.fb {
+    padding: 0.5rem 0.7rem;
+    border-radius: 60%;
+}
+
+.icons i:hover {
+    border-color: hsl(324, 100%, 59%);
+    color: hsl(324, 100%, 59%);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 375px) {
+
+    body {
+        background: url('/images/bg-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .logo {
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 1.7rem;
+    }
+
+    .logo .img1 {
+        width: 140px;
+        margin-bottom: 3rem;
+    }
+
+    .logo .img2 {
+        width: 320px;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .text h2 {
+        margin-top: 1.5rem;
+        font-size: 27px;
+        padding: 0 1.7rem;
+    }
+
+    .text p {
+        font-size: 16.8px;
+        padding: 0 1.7rem;
+    }
+
+    .text button {
+        font-size: 15px;
+        padding: 0.6rem 4.7rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 0;
+        margin-left: 0;
+        padding-right: 1rem;
+    }
+
+    .icons i {
+        font-size: 14px;
+        border: 1.5px solid white;
+        margin-bottom: 2rem;
+    }
+
+    .tw {
+        padding: 0.4rem;
+    }
+
+    .in {
+        padding: 0.4rem;
+    }
+
+    .fb {
+        padding: 0.4rem 0.6rem;
+        border-radius: 50%;
+    }
+}
