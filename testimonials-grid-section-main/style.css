@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+:root {
+    --fontFamily: "Barlow Semi Condensed", sans-serif;
+
+    --FontSize: 13px;
+
+    --fontWeight500: 500;
+    --fontWeight600: 600;
+
+    --ModerateViolet: hsl(263, 55%, 52%);
+    --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --VeryDarkBlackishBlue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+
+    --LightGray: hsl(0, 0%, 81%);
+    --LightGrayishBlue: hsl(210, 46%, 95%);
+
+    /*1. "Verified Graduate" has the same color as the person's name with 50% opacity
+      2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity
+    */
+}
+
+body {
+    background-color: var(--LightGrayishBlue);
+    font-family: var(--fontFamily);
+    font-size: var(--FontSize);
+}
+
+.container {
+    margin: 12rem 10rem;
+}
+
+.flex1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.section-1 {
+    background: url("/images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: top right 80px;
+    background-color: var(--ModerateViolet);
+    width: 31rem;
+    height: 15.5rem;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    margin-right: 2rem;
+    margin-left: -16rem;
+}
+
+.hero1 {
+    display: flex;
+    margin-bottom: -1.3rem;
+}
+
+.hero1 img  {
+    width: 2rem;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid hsl(263, 93%, 65%);
+}
+
+.hero1-text {
+    margin-left: 0.5rem;
+    margin-top: -0.5rem;
+    
+}
+.hero1-text h2 {
+    color: var(--LightGray);
+    font-weight: var(--fontWeight600);
+    font-size: 13px;
+}
+
+.hero1-text p {
+    color: var(--LightGray);
+    font-weight: var(--fontWeight500);
+    font-size: 11px;
+    opacity: 50%;
+    margin-top: -0.5rem;
+}
+
+.section-text1 p {
+    color: var(--White);
+    font-weight: var(--fontWeight600);
+    font-size: 21px;
+    width: 32rem;
+}
+
+.section-quote1 p {
+    color: var(--LightGray);
+    opacity: 70%;
+    position: absolute;
+    margin-top: -0.3rem;
+    line-height: 1.5;
+    width: 32rem;
+    font-size: 14px;
+}
+
+.section-2 {
+    background-color: var(--VeryDarkGrayishBlue);
+    width: 12rem;
+    height: 15.5rem;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+}
+
+.hero2 {
+    display: flex;
+    margin-bottom: -1.3rem;
+}
+
+.hero2 img {
+    width: 2rem;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid var(--LightGray);
+}
+
+.hero2-text {
+    margin-left: 0.5rem;
+    margin-top: -0.5rem;
+}
+
+.hero2-text h2 {
+    color: var(--LightGray);
+    font-weight: var(--fontWeight600);
+    font-size: 13px;
+}
+
+.hero2-text p {
+    color: var(--LightGray);
+    font-weight: var(--fontWeight500);
+    font-size: 11px;
+    opacity: 50%;
+    margin-top: -0.5rem;
+}
+
+.section-text2 p {
+    color: var(--White);
+    font-weight: var(--fontWeight600);
+    font-size: 20px;
+    width: 12rem;
+    margin-top: 2rem;
+}
+
+.section-quote2 p {
+    color: var(--LightGray);
+    opacity: 70%;
+    position: absolute;
+    margin-top: -0.3rem;
+    line-height: 1.5;
+    width: 13rem;
+    font-size: 14px;
+}
+
+.flex2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.section-3 {
+    background-color: var(--White);
+    width: 12rem;
+    height: 15.5rem;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    margin-right: 2rem;
+    margin-left: -14rem;
+}
+
+.hero3 {
+    display: flex;
+    margin-bottom: -1.3rem;
+}
+
+.hero3 img {
+    width: 2rem;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid var(--White);
+}
+
+.hero3-text {
+    margin-left: 0.5rem;
+    margin-top: -0.5rem;
+}
+
+.hero3-text h2 {
+    color: var(--VeryDarkGrayishBlue);
+    font-weight: var(--fontWeight600);
+    font-size: 13px;
+}
+
+.hero3-text p {
+    color: var(--VeryDarkGrayishBlue);
+    font-weight: var(--fontWeight500);
+    font-size: 11px;
+    opacity: 50%;
+    margin-top: -0.5rem;
+}
+
+.section-text3 p {
+    color: var(--VeryDarkGrayishBlue);
+    font-weight: var(--fontWeight600);
+    font-size: 20px;
+    width: 12rem;
+    margin-top: 2rem;
+}
+
+.section-quote3 p {
+    color: var(--VeryDarkGrayishBlue);
+    opacity: 70%;
+    position: absolute;
+    margin-top: -0.3rem;
+    line-height: 1.5;
+    width: 13rem;
+    font-size: 14px;
+}
+
+.section-4 {
+    background-color: var(--VeryDarkBlackishBlue);
+    width: 31rem;
+    height: 15.5rem;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    margin-right: 2rem;
+}
+
+.hero4 {
+    display: flex;
+    margin-bottom: -1.3rem;
+}
+
+.hero4-text {
+    margin-left: 0.5rem;
+    margin-top: -0.5rem;
+}
+
+.hero4 img {
+    width: 2rem;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid var(--ModerateViolet);
+}
+
+.hero4-text h2 {
+    color: var(--LightGray);
+    font-weight: var(--fontWeight600);
+    font-size: 13px;
+}
+
+.hero4-text p {
+    color: var(--LightGray);
+    font-weight: var(--fontWeight500);
+    font-size: 11px;
+    opacity: 50%;
+    margin-top: -0.5rem;
+}
+
+.section-text4 p {
+    color: var(--White);
+    font-weight: var(--fontWeight600);
+    font-size: 20px;
+    width: 31rem;
+    margin-top: 2rem;
+}
+
+.section-quote4 p {
+    color: var(--LightGray);
+    opacity: 70%;
+    position: absolute;
+    margin-top: -0.3rem;
+    line-height: 1.5;
+    width: 31.5rem;
+    font-size: 14px;
+}
+
+.section-5 {
+    background-color: var(--White);
+    width: 12rem;
+    height: 36rem;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    margin-top: -39rem;
+    margin-left: 55rem;
+}
+
+.hero5 {
+    display: flex;
+    margin-bottom: -1.3rem;
+}
+
+.hero5 img {
+    width: 2rem;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid var(--White);
+}
+
+.hero5-text {
+    margin-left: 0.5rem;
+    margin-top: -0.5rem;
+}
+
+.hero5-text h2 {
+    color: var(--VeryDarkGrayishBlue);
+    font-weight: var(--fontWeight600);
+    font-size: 13px;
+}
+
+.hero5-text p {
+    color: var(--VeryDarkGrayishBlue);
+    font-weight: var(--fontWeight500);
+    font-size: 11px;
+    opacity: 50%;
+    margin-top: -0.5rem;
+}
+
+.section-text5 p {
+    color: var(--VeryDarkGrayishBlue);
+    font-weight: var(--fontWeight600);
+    font-size: 20px;
+    width: 12rem;
+    margin-top: 2rem;
+}
+
+.section-quote5 p {
+    color: var(--VeryDarkGrayishBlue);
+    opacity: 70%;
+    position: absolute;
+    line-height: 1.5;
+    width: 12.2rem;
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 375px) {
+    
+    .container {
+        margin: 5rem 1rem;
+    }
+    
+    .flex1 {
+        flex-direction: column;
+    }
+    
+    .section-1 {
+        background-position: top right 30px;
+        width: 15rem;
+        height: 23.5rem;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    
+    .hero1 {
+        margin-bottom: -0.7rem;
+    }
+
+    .section-text1 p {
+        font-size: 17.1px;
+        width: 14rem;
+    }
+    
+    .section-quote1 p {
+        width: 14.3rem;
+        font-size: 12px;
+    }
+    
+    .section-2 {
+        margin-top: 2rem;
+        width: 15rem;
+        height: 11.5rem;
+    }
+    
+    .section-text2 p {
+        font-size: 18px;
+        width: 14rem;
+    }
+    
+    .section-quote2 p {
+        width: 14rem;
+        font-size: 11px;
+    }
+    
+    .flex2 {
+        flex-direction: column;
+    }
+    
+    .section-3 {
+        width: 15rem;
+        height: 10.5rem;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    
+    .section-text3 p {
+        font-size: 18px;
+    }
+    
+    .section-quote3 p {
+        width: 14.5rem;
+        font-size: 11.5px;
+    }
+    
+    .section-4 {
+        width: 15rem;
+        height: 20.5rem;
+        margin-right: 0;
+        margin-top: 2rem;
+    }
+    
+    .section-text4 p {
+        font-size: 18px;
+        width: 15rem;
+    }
+    
+    .section-quote4 p {
+        width: 15rem;
+        font-size: 11.9px;
+    }
+    
+    .section-5 {
+        width: 15rem;
+        height: 26rem;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    
+    .section-text5 p {
+        font-size: 18px;
+        width: 15rem;
+    }
+    
+    .section-quote5 p {
+        width: 15rem;
+        font-size: 12px;
+    }
+}
