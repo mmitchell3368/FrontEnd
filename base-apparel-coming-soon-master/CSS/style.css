@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    /* Colors */
+    --desaturatedRed: hsl(0, 36%, 70%);
+    --softRed: hsl(0, 93%, 68%);
+
+    --darkGrayishRed:  hsl(0, 6%, 24%);
+
+    --gradient1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    --gradient2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+
+    /* Font Size */
+    --fontSize: 16px;
+
+    /* Font Family */
+    --fontFamily: "Josefin Sans", sans-serif;
+
+    /* Font Weights */
+    --weight300: 300;
+    --weight400: 400;
+    --weight600: 600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fontFamily);
+    font-size: var(--fontSize);
+}
+
+html, body {
+    max-width: 1200px;
+}
+
+.container {
+    display: flex;
+}
+
+.text {
+    background: url("/images/bg-pattern-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5rem 7rem;
+}
+
+.comingsoon {
+    margin-top: 6rem;
+}
+
+.comingsoon h1 {
+    font-size: 70px;
+    letter-spacing: 10px;
+}
+
+.comingsoon h1 span {
+    font-size: 70px;
+    letter-spacing: 10px;
+    color: var(--desaturatedRed);
+    font-weight: var(--weight300);
+}
+
+.para {
+    margin-top: 1.5rem;
+}
+
+.para p {
+    font-weight: var(--weight600);
+    line-height: 1.7;
+    color: var(--desaturatedRed);
+}
+
+.email {
+    margin-top: 2rem;
+    display: flex;
+}
+
+.email input[type="email"] {
+    border: 1px solid hsla(0, 6%, 24%, 0.3);
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 1rem;
+    width: 27rem;
+    cursor: pointer;
+}
+
+.email input[type="email"]:focus {
+    border-color: 1px solid hsla(0, 6%, 24%, 0.3);
+    outline: none;
+}
+
+.email input[type="email"]::placeholder {
+    color: hsla(0, 36%, 70%, 0.5);
+}
+
+.email button {
+    border-radius: 30px;
+    background: var(--gradient2);
+    width: 5.5rem;
+    border: none;
+    margin-left: -5.5rem;
+    z-index: 100;
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.error {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    margin-top: -2.3rem;
+    margin-left: 18rem;
+}
+
+.errormessage {
+    display: none;
+    font-size: 11px;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    color: red;
+}
+
+.hero .desktopImg {
+    height: 708px;
+    width: auto;
+}
+
+.hero .mobileImg {
+    display: none;
+}
+
+@media screen and (max-width: 375px) {
+    
+    html, body {
+        background: none;
+        background-color: var(--gradient1);
+    }
+    
+    .container {
+        display: block;
+        overflow: hidden;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background: transparent;
+    }
+
+    .text {
+        display: block;
+        background: transparent;
+        padding: 2rem;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+    
+    .comingsoon {
+        position: relative;
+        top: 15rem;
+        text-align: center;
+        z-index: 1000;
+    }
+    
+    .comingsoon h1 {
+        font-size: 48px;
+    }
+    
+    .comingsoon h1 span {
+        font-size: 48px;
+    }
+    
+    .para {
+        display: block;
+        margin-top: 17rem;
+        z-index: 2000;
+    }
+    
+    .para p {
+        text-align: center;
+        display: block;
+        font-size: 13.5px;
+    }
+    
+    .email {
+        margin-top: 2rem;
+        display: flex;
+    }
+    
+    .email input[type="email"] {
+        border: 1px solid hsla(0, 6%, 24%, 0.3);
+        background-color: transparent;
+        border-radius: 30px;
+        padding: 1rem;
+        width: 19rem;
+        cursor: pointer;
+    }
+    
+    .error {
+        display: none;
+        position: absolute;
+        z-index: 1000;
+        margin-top: -2.3rem;
+        margin-left: 11.5rem;
+    }
+    
+    .errormessage {
+        display: none;
+        font-size: 11px;
+        margin-top: 0.5rem;
+        margin-left: 1rem;
+        color: red;
+    }
+    
+    .hero .desktopImg {
+        display: none;
+    }
+
+    .hero .mobileImg {
+        display: block;
+        height: auto;
+        width: 375px;
+        position: absolute;
+        margin-top: -43.5rem;   
+        z-index: 1; 
+    }
+    
+}
+
